@@ -4,8 +4,9 @@
     --primario: #e6196b;
     --secundario: #0097A7;
     --gris: #757575;
+    --grisClaro: #DFE9F3;
 }
-
+/*Estilos globales*/
 html{
     font-size: 62.5%;
     box-sizing: border-box;
@@ -17,8 +18,10 @@ html{
 body{
     font-size: 16px;
     font-family: 'Nunito', sans-serif;
+    background-image: linear-gradient(to top, var(--primario), var(--grisClaro), 100%);
 }
 
+/*Titulos*/
 h1{
     font-size: 3.8rem;
 }
@@ -34,6 +37,7 @@ h3{
 h1,h2,h3{
     text-align: center;
 }
+
 
 .contenedor{
     max-width: 120rem;
@@ -60,6 +64,7 @@ h1,h2,h3{
     }
 }
 
+/*Titulo principal*/
 .titulo span{
     font-size: 2rem;
 }
@@ -68,6 +73,7 @@ h1,h2,h3{
     background-color: var(--primario);
 }
 
+/*Navegacion del sitio*/
 .navegacion-principal{
     display: flex;
     flex-direction: column;
@@ -93,6 +99,7 @@ h1,h2,h3{
     background-color: var(--secundario);
 }
 
+/*Imagen de fondo*/
 .diseño{
     background-image: url(../img/bg-image.jpg);
     background-repeat: no-repeat;
