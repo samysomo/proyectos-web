@@ -8,17 +8,26 @@
 }
 /*Estilos globales*/
 html{
-    font-size: 62.5%;
-    box-sizing: border-box;
+    font-size: 62.5%; /*Hacer que rem = 10px*/
+    box-sizing: border-box; /*Evitar que paddings y margins cambien el tamaño de los elementos*/
 }
-*,*::after,*::before{
-    box-sizing: inherit;
+*,*::after,*::before{ /*Evitar que paddings y margins cambien el tamaño de los elementos*/
+    box-sizing: inherit; 
 }
 
 body{
-    font-size: 16px;
+    font-size: 16px; /*Hacer que rem = 10px*/
     font-family: 'Nunito', sans-serif;
-    background-image: linear-gradient(to top, var(--primario), var(--grisClaro), 100%);
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
+}
+
+.sombra{
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
 /*Titulos*/
@@ -41,7 +50,7 @@ h1,h2,h3{
 
 .contenedor{
     max-width: 120rem;
-    margin:0 auto 0 auto
+    margin:0 auto 0 auto;
 }
 
 .boton{
@@ -106,6 +115,7 @@ h1,h2,h3{
     background-size: cover;
     height: 450px;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .contenido-diseño{
@@ -121,4 +131,39 @@ h1,h2,h3{
 
 .contenido-diseño h2, .contenido-diseño p{
     color: var(--blanco);
+}
+
+/*Columnas servicios*/
+@media (min-width: 768px) {
+    .servicios{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
+}
+
+.servicio{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.servicio h3{
+ color: var(--secundario);
+ font-weight: normal;
+}
+
+.servicio p{
+    line-height: 2; /*Interlineado*/
+    text-align: center;
+}
+
+.servicio .iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
