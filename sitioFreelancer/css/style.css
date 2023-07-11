@@ -3,7 +3,7 @@
     --oscuro: #212121;
     --primario: #e6196b;
     --secundario: #0097A7;
-    --gris: #757575;
+    --morado: #2c1844;
     --grisClaro: #DFE9F3;
 }
 /*Estilos globales*/
@@ -178,7 +178,7 @@ h1,h2,h3{
 /*Seccion CONTACTO*/
 
 .formulario{
-    background-color: var(--gris);
+    background-color: var(--morado);
     width: min(60rem, 100%); /*Utilizar el valor más pequeño*/
     margin: 0 auto;
     padding: 2rem;
