@@ -40,8 +40,8 @@
         <div class="servicios">
             <section class="servicio">
                 <h3>Diseño Web</h3>
-                <div class="iconos"> <!--Obtenidos de tabler icons-->>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world-www" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <div class="iconos"> <!--Obtenidos de tabler icons-->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world-www" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M19.5 7a9 9 0 0 0 -7.5 -4a8.991 8.991 0 0 0 -7.484 4" />
                         <path d="M11.5 3a16.989 16.989 0 0 0 -1.826 4" />
@@ -59,7 +59,7 @@
             <section class="servicio">
                 <h3>Aplicaciones Web</h3>
                 <div class="iconos">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-appgallery" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-appgallery" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
                         <path d="M9 8a3 3 0 0 0 6 0" />
@@ -70,7 +70,7 @@
             <section class="servicio">
                 <h3>E-commerce</h3>
                 <div class="iconos">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-bag" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-bag" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z" />
                         <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
@@ -79,36 +79,37 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe suscipit accusamus repellat c</p>
             </section>
         </div>
-    </main>
     <section>
         <h2>Contacto</h2>
-        <form action="">
+        <form class="formulario" action="">
             <fieldset>
                 <legend>Contactanos si tienes alguna duda</legend>
-                <div>
-                    <label for="">Nombre</label>
-                    <input type="text" placeholder="Tu Nombre">
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label for="">Nombre</label>
+                        <input class="inputs-formulario" type="text" placeholder="Tu Nombre">
+                    </div>
+                    <div class="campo">
+                        <label for="">Teléfono</label>
+                        <input class="inputs-formulario" type="tel" placeholder="Tu Teléfono">
+                    </div>
+                    <div class="campo">
+                        <label for="">Correo</label>
+                        <input class="inputs-formulario" type="email" placeholder="Tu Correo">
+                    </div>
+                    <div class="campo">
+                        <label for="">Mensaje</label>
+                        <textarea class="inputs-formulario" name="" id="" cols="30" rows="10"></textarea>
+                    </div>
                 </div>
 
-                <div>
-                    <label for="">Teléfono</label>
-                    <input type="tel" placeholder="Tu Teléfono">
+                <div class="alinear-derecha flex">
+                    <input class="boton width-100" type="submit" value="Enviar">
                 </div>
-
-                <div>
-                    <label for="">Correo</label>
-                    <input type="email" placeholder="Tu Correo">
-                </div>
-
-                <div>
-                    <label for="">Mensaje</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-
-                <div><button type="submit" value="Enviar">Enviar</button></div>
             </fieldset>
         </form>
-    </section> 
+    </section>
+</main> 
     <footer>
         <p>Todos los derechos reservados. Samuel Serrato Loyola freelancer</p>
     </footer>
