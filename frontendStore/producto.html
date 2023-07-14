@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Producto</title>
+</head>
+<body>
+    <header class="header"> <!--BLOQUE-->
+        <a href="index.html">
+            <img class="header__logo"  src="img/logo.png" alt="logo"> <!--ELEMENTO-->
+        </a>
+    </header>
+    <nav class="navegacion">
+        <a class="navegacion__elementos navegacion__elementos--activo" href="index.html">Tienda</a> <!--MODIFICADOR-->
+        <a class="navegacion__elementos" href="nosotros.html">Nosotros</a>
+    </nav>
+    <main class="contenedor">
+        <h1>ReactJS</h1>
+        <div class="mostrarProducto">
+            <img class="mostrarProducto__imagen" src="img/3.jpg" alt="camisa">
+            <div class="mostrarProducto__contenido">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ex dolorem distinctio velit, rerum numquam soluta cumque sed ullam omnis nobis inventore voluptate cupiditate nisi fugit aspernatur quo quidem explicabo.</p>
+                <form class="mostrarProducto__formulario" action="">
+                    <select class="mostrarProducto__seleccion" name="" id="">
+                        <option value="" disabled selected>--Seleccionar talla--</option>
+                        <option value="">Chica</option>
+                        <option value="">Mediana</option>
+                        <option value="">Grande</option>
+                    </select>
+                    <input class="mostrarProducto__seleccion" type="number" placeholder="Cantidad" min="1">
+                    <input class="mostrarProducto__submit" type="submit" value="Agregar al carrito">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__texto">Front End Store - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

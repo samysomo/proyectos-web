@@ -3,9 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
     <title>frontendStore</title>
 </head>
 <body>
-    
+    <header class="header"> <!--BLOQUE-->
+        <a href="index.html">
+            <img class="header__logo"  src="img/logo.png" alt="logo"> <!--ELEMENTO-->
+        </a>
+    </header>
+    <nav class="navegacion">
+        <a class="navegacion__elementos navegacion__elementos--activo" href="index.html">Tienda</a> <!--MODIFICADOR-->
+        <a class="navegacion__elementos" href="nosotros.html">Nosotros</a>
+    </nav>
+    <main class="contenedor">
+        <h1>NUESTROS PRODUCTOS</h1>
+        <div class="grid">
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/1.jpg" alt="playera VueJS"></a>
+                <div class="producto__informacion">
+                    <p class="producto__nombre">VueJS</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+            </div>
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/2.jpg" alt="playera AngularJS"></a>
+                <div class="producto__informacion">
+                    <p class="producto__nombre">AngularJS</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+            </div>
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/3.jpg" alt="playera ReactJS"></a>
+                <div class="producto__informacion">
+                    <p class="producto__nombre">ReactJS</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+            </div>
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/4.jpg" alt="playera Redux"></a>
+                <div class="producto__informacion">
+                    <p class="producto__nombre">Redux</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+            </div>
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/5.jpg" alt="playera NodeJS"></a>
+                <div class="producto__informacion">
+                    <p class="producto__nombre">NodeJS</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+            </div>
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/6.jpg" alt="playera Sass"></a>
+                <div class="producto__informacion">
+                    <p class="producto__nombre">Sass</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+            </div>
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/7.jpg" alt="playera HTML"></a>
+                <div class="producto__informacion">
+                    <p class="producto__nombre">HTML</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+            </div>
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/8.jpg" alt="playera GitHub"></a>
+                <div class="producto__informacion">
+                    <p class="producto__nombre">GitHub</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+            </div>
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/9.jpg" alt="playera Bulma"></a>
+                <div class="producto__informacion">
+                    <p class="producto__nombre">Bulma</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+            </div>
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/10.jpg" alt="playera TypeScript"></a>
+                <div class="producto__informacion">
+                    <p class="producto__nombre">TypeScript</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+            </div>
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/11.jpg" alt="playera Drupal"></a>
+                <div class="producto__informacion">
+                    <p class="producto__nombre">Drupal</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+            </div>
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/12.jpg" alt="playera JavaScript"></a>
+                <div class="producto__informacion">
+                    <p class="producto__nombre">JavaScript</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+            </div>
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/13.jpg" alt="playera GraphQL"></a>
+                <div class="producto__informacion">
+                    <p class="producto__nombre">GraphQL</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+            </div>
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/14.jpg" alt="playera Wordpress"></a>
+                <div class="producto__informacion">
+                    <p class="producto__nombre">Wordpress</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+            </div>
+            <div class="grafico grafico--playeras"></div>
+            <div class="grafico grafico--node"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__texto">Front End Store - Todos los derechos reservados</p>
+    </footer>
 </body>
 </html>
