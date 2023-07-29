@@ -321,3 +321,19 @@ h4{
     height: 20rem;
 }
 
+.error{
+    background-color: rgb(185, 0, 0);
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+}
+
+.valido{
+    background-color: rgb(61, 174, 61);
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+}
+
